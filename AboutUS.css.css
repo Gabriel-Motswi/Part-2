@@ -1,0 +1,255 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9fc;
+    color: #333;
+}
+
+.navbar {
+    background: #0b3d91;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* =====================
+   NAVBAR — REDESIGNED
+   ===================== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 80px;
+    background: linear-gradient(135deg, #0b2fa8 0%, #1565c0 60%, #1976d2 100%);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Brand / logo group */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 0.5px;
+}
+
+.logo-tagline {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.logo-img {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+}
+
+/* Nav links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1.5px solid transparent;
+    transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* Phone CTA button — pops out in amber/gold */
+.nav-links a.nav-cta {
+    background: #f5a623;
+    color: #1a1a1a;
+    font-weight: 700;
+    border-color: #f5a623;
+    border-radius: 6px;
+}
+
+.nav-links a.nav-cta:hover {
+    background: #e09400;
+    border-color: #e09400;
+    color: #1a1a1a;
+}
+
+/* =====================
+   MOBILE
+   ===================== */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 16px 20px;
+        gap: 14px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
+
+/* ABOUT HERO */
+.about-hero {
+    background: linear-gradient(to right,#0b3d91,#1e90ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.about-hero img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.about-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px
+}
+
+.about-hero p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background: #f5f9fc;
+    padding: 80px 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* ABOUT CARDS */
+.about-hero p {
+font-size: 20px;
+max-width: 700px;
+margin: auto;
+}
+
+
+.about-section {
+background: #f5f9fc;
+padding: 60px 40px;
+display: flex;
+flex-direction: column;
+gap: 25px;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.about-card {
+background: white;
+width: 100%;
+padding: 40px 50px;
+border-radius: 12px;
+border-left: 5px solid #f4a100;
+box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+transition: 0.3s;
+}
+
+.about-card:hover {
+transform: translateX(8px);
+box-shadow: 0 5px 20px rgba(11, 61, 145, 0.12);
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(11,61,145,0.15);
+}
+
+.about-card h2 {
+    color: #0b3d91;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.about-card ul {
+    padding-left: 20px;
+}
+
+.about-card li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* FOOTER */
+footer {
+    background: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

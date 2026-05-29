@@ -1,0 +1,170 @@
+ <!DOCTYPE html>
+<html lang="en">
+    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us – Milo's Plumbing</title>
+
+        <!--LINK CSS-->
+        <link rel="stylesheet" href="CSS/Contact.css.css">
+
+        <style>
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 50px;
+                height: 78px;
+                background: linear-gradient(135deg, #0b2fa8 0%, #1565c0 55%, #1976d2 100%);
+                position: sticky;
+                top: 0;
+                z-index: 100;
+                box-shadow: 0 3px 12px rgba(11, 47, 168, 0.35);
+            }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                gap: 13px;
+                text-decoration: none;
+            }
+            .navbar-brand img {
+                width: 58px;
+                height: 58px;
+                border-radius: 8px;
+                object-fit: contain;
+                background: white;
+                padding: 3px;
+            }
+            .brand-text { display: flex; flex-direction: column; }
+            .brand-name { font-size: 20px; font-weight: 700; color: white; letter-spacing: 0.4px; }
+            .brand-sub  { font-size: 11px; color: rgba(255,255,255,0.65); letter-spacing: 0.6px; }
+            .nav-links { display: flex; align-items: center; gap: 6px; }
+            .nav-links a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+                font-family: 'Georgia', serif;
+                padding: 9px 18px;
+                border-radius: 6px;
+                border: 1.5px solid rgba(255,255,255,0.35);
+                background: rgba(255,255,255,0.1);
+                transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+                white-space: nowrap;
+                font-weight: 600;
+                letter-spacing: 0.3px;
+            }
+            .nav-links a:hover {
+                background: rgba(255,255,255,0.22);
+                border-color: rgba(255,255,255,0.6);
+                transform: translateY(-2px);
+            }
+            .nav-links a.nav-cta {
+                background: #f5a623;
+                color: #1a1100;
+                font-weight: 700;
+                border-color: #f5a623;
+                margin-left: 10px;
+                box-shadow: 0 3px 10px rgba(245,166,35,0.45);
+            }
+            .nav-links a.nav-cta:hover {
+                background: #e09400;
+                border-color: #e09400;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 14px rgba(245,166,35,0.55);
+            }
+            @media screen and (max-width: 768px) {
+                .navbar { flex-direction: column; height: auto; padding: 16px 20px; gap: 12px; }
+                .nav-links { flex-wrap: wrap; justify-content: center; gap: 6px; }
+                .brand-name { font-size: 17px; }
+            }
+        </style>
+    </head>
+
+
+    <body>
+
+        <!--NAVIGATION-->
+        <header>
+            <nav class="navbar">
+                <a href="Home.html" class="navbar-brand">
+                    <img src="Images/Milo'sPlumbing.png" alt="Milo's Plumbing Logo">
+                    <div class="brand-text">
+                        <span class="brand-name">Milo's Plumbing</span>
+                        <span class="brand-sub">Reliable · Professional</span>
+                    </div>
+                </a>
+                <div class="nav-links">
+                    <a href="Home.html">Home</a>
+                    <a href="AboutUs.html">About Us</a>
+                    <a href="Services.html">Services</a>
+                    <a href="Reviews.html">Reviews</a>
+                    <a href="Contact.html">Contact</a>
+                    <a href="tel:9289413112" class="nav-cta">928-941-3112</a>
+                </div>
+            </nav>
+        </header>
+    
+    <!--CONTACT HERO-->
+    <section class="contact-hero">
+
+        <img src="Images/Milo'sPlumbing.png" alt="Logo">
+
+        <h1>Contact Milo's Plumbing</h1>
+
+        <p>
+            Reliable plumbing services for homes and businesses.
+        </p>
+
+    </section>
+
+    <!--CONTACT FORM-->
+   <section class="contact-wrapper">
+<h1 class="contact-title">Contact Milo's Plumbing</h1>
+<p class="contact-subtitle">Reliable plumbing services for homes and businesses. Get a free quote today.</p>
+
+<div class="contact-grid">
+<!-- Left: Booking Form -->
+<div class="contact-card">
+<h2>Book A Service</h2>
+<form class="contact-form">
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number" required>
+
+<label>Type of Service</label>
+<input type="text" placeholder="e.g. Leak repair, Drain cleaning" required>
+
+<label>Message</label>
+<textarea placeholder="Describe your plumbing issue..." rows="4"></textarea>
+
+<button type="submit" class="submit-btn">Submit Request</button>
+</form>
+</div>
+
+<!-- Right: Location Card -->
+<div class="contact-card">
+<h2>Where To Find Us</h2>
+<div class="map-box">
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.5!2d-114.615!3d32.692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDQxJzMxLjIiTiAxMTTCsDM2JzU0LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+width="100%"
+height="250"
+style="border:0; border-radius:8px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+</div>
+<div class="contact-info">
+<p>📍 <strong>Address:</strong> 11130 S Shadow Ave, Yuma, AZ 85365, USA</p>
+<p>📞 <strong>Phone:</strong> <a href="tel:9289413112">928-941-3112</a></p>
+<p>⏰ <strong>Hours:</strong> Mon-Sun, 7AM - 7PM | 24/7 Emergency</p>
+        </div>
+       </div>
+    </div>
+   </section>
+ </body>
+</html>

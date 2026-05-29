@@ -1,0 +1,232 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f9fc;
+    color: #333;
+}
+
+/* NAVBAR */ 
+.navbar {
+    background: #0b3d91;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* NAV LINKS */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+
+.nav-links a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+font-weight: 600;
+padding: 12px 22px;
+border-radius: 12px;
+background: rgba(0, 0, 0, 0.5);
+border: 2px solid transparent;
+transition: all 0.3s ease;
+margin-left: 
+}
+
+
+.nav-links a:hover {
+background: #f4a100;
+color: #000;
+border-color: #f4a100;
+transform: translateY(-3px);
+box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+
+.navbar {
+justify-content: center; 
+}
+
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5)),
+    rgba(0,0,0,0.5)
+    url('images/gif drain.gif');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 80px;
+
+    color: white;
+}
+
+/* HERO CONTENT */
+.hero-content {
+    max-width: 600px;
+}
+
+/* MAIN HEADING */
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+/* PARAGRAPH */
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+/* BUTTONS */
+.buttons a {
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-right: 15px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+/* PRIMARY BUTTON */
+.btn-primary {
+    background: #ffb703;
+    color: black;
+}
+
+/* SECONDARY BUTTON */
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+/* BUTTON HOVER */
+.btn-primary:hover {
+    background: #ffd166;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #0b3d91;
+}
+
+/* SERVICES SECTION */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 60px 40px;
+
+    flex-wrap: wrap;
+}
+
+/* SERVICE CARDS */
+.service-card {
+    background: white;
+
+    width: 300px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+/* CARD HOVER */
+.service-card:hover {
+    transform: transitionY(-10px);
+}
+
+/* CARD HEADING */
+.service-card h2 {
+    margin-bottom: 15px;
+    color: #0b3d91;
+}
+
+/* FOOTER */
+footer {
+    background: #0b3d91;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
